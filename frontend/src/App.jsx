@@ -4,11 +4,11 @@ import { useSession } from './hooks/useSession.js';
 import { NavBar } from './components/NavBar.jsx';
 import { RequireAuth } from './components/RequireAuth.jsx';
 
-const AuthPage = lazy(() => import('./pages/AuthPage.jsx'));
-const DashboardPage = lazy(() => import('./pages/DashboardPage.jsx'));
-const HouseholdsPage = lazy(() => import('./pages/HouseholdsPage.jsx'));
-const HouseholdDetailPage = lazy(() => import('./pages/HouseholdDetailPage.jsx'));
-const MapPage = lazy(() => import('./pages/MapPage.jsx'));
+const AuthPage = lazy(() => import('./pages/AuthPage.jsx').then((m) => ({ default: m.AuthPage })));
+const DashboardPage = lazy(() => import('./pages/DashboardPage.jsx').then((m) => ({ default: m.DashboardPage })));
+const HouseholdsPage = lazy(() => import('./pages/HouseholdsPage.jsx').then((m) => ({ default: m.HouseholdsPage })));
+const HouseholdDetailPage = lazy(() => import('./pages/HouseholdDetailPage.jsx').then((m) => ({ default: m.HouseholdDetailPage })));
+const MapPage = lazy(() => import('./pages/MapPage.jsx').then((m) => ({ default: m.MapPage })));
 
 const App = () => {
   const { session, loading } = useSession();
