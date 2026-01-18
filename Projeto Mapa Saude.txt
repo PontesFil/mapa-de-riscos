@@ -1,0 +1,41 @@
+Chat, quero que você crie para mim a estrutura fullstack (frontend e backend) de uma ferramenta web, utilizando Vite + React no frontend, voltada para mapeamento e gestão de riscos em saúde comunitária.
+Objetivo da ferramenta:
+- Permitir que eu registre domicílios de uma comunidade, identifique fatores de risco em saúde e visualize essas informações de forma organizada, facilitando o acompanhamento e a priorização de ações.
+Funcionalidades desejadas:
+1. Autenticação básica
+- Tela ela de login e cadastro de usuário
+- Autenticação simples (sem foco em segurança avançada)
+2. Gestão de domicílios
+ Cadastrar domicílios com:
+- Nome do responsável
+- Endereço
+- Microárea
+- Observações gerais
+- Listar, editar e excluir domicílios
+3. Registro de fatores de risco
+Associar fatores de risco a cada domicílio, como:
+- Água parada
+- Presença de animais
+- Falta de saneamento
+- Lixo acumulado
+- Campo de observações por fator
+- Data do registro
+4. Classificação de risco
+- Calcular automaticamente um nível de risco (baixo, médio ou alto) com base na quantidade de fatores registrados
+- Exibir o nível de risco visualmente (cores ou badges)
+5. Visualização em mapa (simples)
+- Mostrar os domicílios em um mapa
+- Marcar cada domicílio com cores diferentes conforme o nível de risco
+- Usar uma solução simples (como OpenStreetMap ou Leaflet)
+6. Dashboard
+- Quantidade total de domicílios
+- Quantidade por nível de risco
+- Lista de domicílios prioritários
+Estrutura técnica desejada
+Frontend: Vite + React, Componentes bem organizados, Uso de hooks (useState, useEffect), Rotas com React Router, Interface simples, limpa e funcional.
+Backend: Supabase (faça as devidas modificações de codigo e estrutura, e me mande uma sugestão de query SQL para eu rodar no supabase e criar a estrutura que você sugerir e alimentar a ferramenta), CRUD completo (usuários, domicílios, fatores de risco).
+Sugestões extras
+Inclua também:
+- Filtros por microárea e nível de risco
+- Histórico de visitas por domicílio
+- Exportação simples de dados (JSON)
